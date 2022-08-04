@@ -1,10 +1,10 @@
 # VSDIAT_workshop
-# OpenSource Physical Design
-  This repository contains all the information studied and created during the [Advanced Physical Design Using OpenLANE / SKY130](https://www.vlsisystemdesign.com/advanced-physical-design-using-openlane-sky130/) workshop. It is primarily foucused on a complete RTL2GDS flow using the open-soucre flow named OpenLANE. [PICORV32A](https://github.com/cliffordwolf/picorv32) RISC-V core design is used for the purpose.
+# Overview of the VSDIAT Workshop
+  Repository for the workshop [Advanced Physical Design Using OpenLANE / SKY130](https://www.vlsisystemdesign.com/advanced-physical-design-using-openlane-sky130/). The workshop is mainly focused on advanced Physical Design flow (RTL2GDS) using all opensource tools and [SKY130 pdk](https://github.com/google/skywater-pdk) from Skywater.The flow for using all the open-source tools is called Openlane which is being used in this workshop. The design used for this workshop is [PICORV32A](https://github.com/cliffordwolf/picorv32), which is a RISC-V core design.
 
 # Table of Contents
-  - [Introduction To RTL to GDSII Flow](#introduction-to-rtl-to-gdsii-flow)
-  - [About Google SkyWater PDK](#about-google-skywater-pdk)
+  - [Brief Introduction To RTL2GDSII Flow](#brief-introduction-to-rtl2gdsii-flow)
+  - [Google SkyWater PDK Overview](#google-skywater-pdk-overview)
   - [List of All Open-Source Tools Used](#list-of-all-open-source-tools-used)
   - [Setting Up Environment](#setting-up-environment)
   - [Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK](#day-1---inception-of-open-source-eda-openlane-and-sky130-pdk)
@@ -45,9 +45,9 @@
   - [References](#references)
   - [Acknowledgement](#acknowledgement)
  
-# Introduction To RTL to GDSII Flow
-  RTL to GDSII Flow refers to the all the steps involved in converting a logical Register Transfer Level(RTL) Design to a fabrication ready GDSII format. GDSII is a database file format which is an industry standard for data exchange of IC layout artwork.
-  The RTL to GSDII flow consists of following steps:
+# Brief Introduction To RTL2GDSII Flow
+  RTL2GDS or RTL to GDSII Flow is the process of flow which are used to convert a RTL(Register Transfer Level design) hdl code like verilog and vhdl to a foundry ready format (GDSII) needed for fabrication of ASICs. GDSII represents a database file format which contains all the information about the IC layout artworks.
+  The RTL to GSDII flow is as follows:
   - RTL Synthesis
   - Static Timing Analysis(STA)
   - Design for Testability(DFT)
@@ -59,8 +59,8 @@
  
  All the steps are further discussed in details in the repository.
   
-# About Google SkyWater PDK
-  Google and SkyWater Technology Foundry in collaboration have released a completely open-source Process Design Kit(PDK) in May, 2020. The current release target to a SKY130 (i.e. 130 nm) process node is available as [SkyWater Open Source PDK](https://github.com/google/skywater-pdk). The PDK provides Physical VLSI Designer with a wide range of flexibility in design choices. All the designs and simulations listed in this repository are carried out using the same SkyWater Open Source PDK.
+# Google SkyWater PDK Overview
+  In May 2020, Google and SkyWater Technology Foundry collaborated to release a completely open-source Process Design Kit (PDK). The current release target is an SKY130 (130 nm) process node and is available as [SkyWater Open Source PDK](https://github.com/google/skywater-pdk). This initiative makes sure that the Physical VLSI Designer has a lot of design options thanks to the Opensource PDK. This PDK also comes with a lot of designs which can be used for layout and simulations using the SKY130 nm pdk.
 
 # List of All Open-Source Tools Used
   | Name of Tool | Application / Usage |
